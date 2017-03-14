@@ -1,0 +1,192 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Main CSS */
+html {
+    font-size: 14px;
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+.main {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+.art {
+    position: relative;
+}
+.over-hidden {
+    overflow: hidden;
+}
+.person-div {
+    text-align: center;
+    position: relative;
+}
+.timeline {
+    border-right: 2px solid rgb(187, 25, 25);
+    color: rgb(187, 25, 25);
+    font-size: 12px;
+}
+.timeline-buffer {
+    margin-top: 2em;
+}
+/* Text CSS */
+.main-header {
+    font-weight: bold;
+}
+.art-alert {
+    background-color: rgb(187, 25, 25);
+    position: absolute;
+    top: 20px;
+    color: white;
+    padding: 5px 15px 5px 15px;
+}
+.comment {
+    font-weight: bold;
+    color: rgb(97, 106, 122);
+}
+.comments {
+    font-weight: bold;
+    color: rgb(97, 106, 122);
+    text-align: center;
+    text-decoration: underline;
+}
+.comments:hover {
+    font-weight: bold;
+    color: rgb(90, 100, 110);
+    text-align: center;
+    text-decoration: underline;
+}
+.red-text {
+    color: rgb(187, 25, 25);
+    font-weight: bold;
+}
+.red-dot {
+    position: absolute;
+    left: -21px;
+    top: 0;
+    display: block;
+    color: rgb(187, 25, 25);
+    background-color: rgb(187, 25, 25);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.red-dot2 {
+    position: absolute;
+    left: -31px;
+    top: 0;
+    display: block;
+    color: rgb(187, 25, 25);
+    background-color: rgb(187, 25, 25);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.red-dot2 p {
+    color: rgb(187, 25, 25);
+    position: absolute;
+    left: -60px;
+    top: -5px;
+    text-align: center;
+}
+.red-dot p {
+    color: rgb(187, 25, 25);
+    position: absolute;
+    left: -60px;
+    top: -5px;
+    text-align: center;
+}
+.nav-text {
+    text-align: right;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: row;
+    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.nav-text img {
+    width: auto;
+    height: 60%;
+}
+article {
+    position: relative;
+    width: 100%;
+}
+h1:hover {
+    text-decoration: underline;
+}
+h4:hover {
+    text-decoration: underline;
+}
+h5:hover {
+    text-decoration: underline;
+}
+.item1 article:hover p {
+    text-decoration: underline;
+}
+/* Images CSS */
+.quote-img {
+    position: absolute;
+}
+.main-img {
+    width: 100%;
+    height: 100%;
+}
+/* Buffers */
+.top-buffer {
+    margin-top: 20px;
+}
+.right-buffer {
+    margin-right: 10px;
+}
+.left-buffer {
+    margin-left: 10px;
+}
+.bottom-buffer {
+    padding-bottom: 10px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .art-header {
+    margin-top: 20px;
+    font-weight: bold;}
+    .quote-img {
+    position: absolute;
+    left: 25px;
+    top: 5px;}
+}
+@media (min-width: 980px) {
+    .art-header {
+    font-weight: bold;}
+    .quote-img {
+    position: absolute;
+    left: 35px;
+    top: 5px;}
+}
+@media (min-width: 1200px) {
+    .timeline {
+    background-color: rgb(242, 242, 242);}
+    .right-border {
+    border-right: 5px solid rgb(242, 242, 242)}
+    .left-border {
+    border-left: 2px solid rgb(242, 242, 242)}
+    .item1 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;}
+    .item2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;}
+}
